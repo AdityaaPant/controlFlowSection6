@@ -8,12 +8,12 @@ public class NumberPalindrome {
           if(reverse == number){
               while(number>=0){
                   lastDigit = number % 10;
-                  reverse = reverse*10;
-                  
+                  lastDigit = reverse*10;
+
               }
-          }else{
-              return false;
           }
+              return false;
+
 
     }
 }
