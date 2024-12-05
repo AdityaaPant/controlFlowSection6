@@ -1,6 +1,6 @@
 public class firstNlast {
    public static void main( String[] args) {
-       System.out.println("sum is" +sumFirstAndLastDigit(2));
+       System.out.println("sum is" +sumFirstAndLastDigit(212));
        System.out.println("sum is" +sumFirstAndLastDigit(713));
        System.out.println("sum is" +sumFirstAndLastDigit(112));
    }
@@ -9,10 +9,9 @@ public class firstNlast {
             if (number < 0) {
                 return -1;
             }
-            int lastNumber = number %10;
              int firstNumber = number;
-
-            while(firstNumber >= 10){
+            int lastNumber = number %10;
+            while(firstNumber >9){
                 firstNumber /= 10;
             }
             return firstNumber + lastNumber;
