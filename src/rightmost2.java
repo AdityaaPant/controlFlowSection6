@@ -16,6 +16,8 @@ public class rightmost2 {
         }
         public static boolean isValid(int four){
         if(four>=10 && four<=1000){
+
+
             return true;
         }return false;
         }
