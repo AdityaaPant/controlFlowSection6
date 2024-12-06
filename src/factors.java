@@ -2,8 +2,8 @@ public class factors {
     public static void main(String[] args){
         System.out.println(printFactors(28));
     }
-    public static boolean printFactors(int number){
-        int sum =0;
+    public static String printFactors(int number){
+
         if (number <1){
             System.out.println("Invalid Value");
         }
@@ -12,12 +12,12 @@ public class factors {
                 System.out.print(i+" ");
 
 
-                sum+=i;
+
 
             }
         }
 
+            return "";
 
-        return sum==number;
     }
 }
