@@ -29,7 +29,7 @@ public class input {
                    age = checkData(currentYear , scanner.nextLine());
                    validDOB =age < 0 ? false:true;
                }catch(NumberFormatException badUserData){
-                   System.out.println("Characters not allowed!! try again..");jj
+                   System.out.println("Characters not allowed!! try again..");
                }
 
             }while(!validDOB);
