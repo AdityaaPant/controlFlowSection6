@@ -1,22 +1,25 @@
 import java.util.Scanner;
 
 public class inputChallenge {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int counter =1;
-        int sum =0;
-        while(counter<=5){
-            System.out.println("Enter number #"+ counter + ":");
-            String nextNumber= scanner.nextLine();
+        int counter = 1;
+        double sum = 0;
+        do {
+            System.out.println("Enter number #" + counter + ":");
+            String nextNumber = scanner.nextLine();
             try {
-                int number = Integer.parseInt(nextNumber);
+//                int number = Integer.parseInt(nextNumber);
+                double number = Double.parseDouble(nextNumber);
                 counter++;
                 sum += number;
-            }catch(NumberFormatException nfe){
+            } catch (NumberFormatException nfe) {
                 System.out.println("Invalid Number");
             }
 
+        } while (counter <= 5);
+        {
+            System.out.println("the sum of the 5 numbers = " + sum);
         }
-        System.out.println("the sum of the 5 numbers = "+ sum);
     }
 }
